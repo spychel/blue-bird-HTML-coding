@@ -1,0 +1,50 @@
+.languages
+    background-color: $section-bg-color
+    &__wrapper
+        padding: 1.8rem 0
+        display: grid
+        grid-template-columns: minmax(min-content, 1fr) 5fr
+        align-items: center
+
+.section-name
+    color: #6F7577
+    font-family: 'Fira Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 1.6rem
+    text-transform: capitalize
+
+.language-selector
+    display: grid
+    grid-template-columns: repeat(8, 6rem)
+    column-gap: 5.5rem
+
+    &__language
+        width: 5.9rem
+        height: 5.9rem
+        border-radius: 50%
+        cursor: pointer
+        display: inline-block
+        &:hover:not(&_active)
+            outline: .5rem solid #ACFFAB
+        &:active:not(&_active)
+            outline: .5rem solid #84E582
+        &_active
+            outline: .5rem solid #84E582
+        &_add
+            background-color: $body-bg-color
+            position: relative
+            &::after
+                content: '+'
+                color: #6F7577
+                font-family: 'Fira Sans'
+                font-size: 5.5rem
+                font-weight: normal
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%, -50%)
+    &_fra
+        background: url(../img/icon-fra-96.png) center / cover no-repeat
+    &_usa
+        background: url(../img/icon-usa-96.png) center / cover no-repeat

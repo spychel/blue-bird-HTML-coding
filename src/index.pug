@@ -1,0 +1,120 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Rubik&display=swap", rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Rubik&display=swap", rel="stylesheet")
+        title Синяя птица - L'oiseau bleu
+    body
+        .container
+            header.header.mb-3 
+                .page-width
+                    .header__wrapper
+                        .logo
+                            a(href="#").logo__link 
+                                span.logo__text L'oiseau bleu
+                                img.logo__img(src="img/Logo.png", alt="logo")
+                        nav.nav.header__nav
+                            ul.nav__list
+                                li.nav__item
+                                    a(href="#").nav__link ТРЕНИРОВКИ
+                                li.nav__item
+                                    a(href="#").nav__link СЕТЫ
+                        .header__enter
+                            img.header__enter__img(src="img/enter.png", alt="вход")
+            main
+                section.languages.mb-3
+                    .page-width
+                        .languages__wrapper
+                            span.section-name языки
+                            .language-selector
+                                link.language-selector__language.language-selector__language_active.language-selector_fra
+                                link.language-selector__language.language-selector_usa
+                                link.language-selector__language.language-selector__language_add
+                section.sets.mb-3
+                    .sets__header
+                        .page-width
+                            .sets__header__wrapper
+                                span.section-name Сеты
+                                span.expander.expander_up.sets__expander
+                    .sets__content 
+                        .page-width
+                            .sets__content__wrapper
+                                .set-card
+                                    .set-card__img 
+                                        img(src="img/verbe.png", alt="Глагол")
+                                    .set-card__details
+                                        span.set-card__title ТОП-10 глаголов                  
+                                        .set-card__status 
+                                            span.set-card__total-words 10 слов
+                                            span.set-card__progress 0 / 100%
+                                .set-card
+                                    .set-card__img 
+                                        img(src="img/verbe.png", alt="Глагол")
+                                    .set-card__details
+                                        span.set-card__title ТОП-10 глаголов                  
+                                        .set-card__status 
+                                            span.set-card__total-words 10 слов
+                                            span.set-card__progress 0 / 100%
+                                .set-card
+                                    .set-card__img 
+                                        img(src="img/verbe.png", alt="Глагол")
+                                    .set-card__details
+                                        span.set-card__title ТОП-10 глаголов                  
+                                        .set-card__status 
+                                            span.set-card__total-words 10 слов
+                                            span.set-card__progress 0 / 100%
+                                .set-card
+                                    .set-card__img 
+                                        img(src="img/verbe.png", alt="Глагол")
+                                    .set-card__details
+                                        span.set-card__title ТОП-10 глаголов                  
+                                        .set-card__status 
+                                            span.set-card__total-words 10 слов
+                                            span.set-card__progress 0 / 100%
+                                .set-card
+                                    .set-card__img 
+                                        img(src="img/verbe.png", alt="Глагол")
+                                    .set-card__details
+                                        span.set-card__title ТОП-10 глаголов                  
+                                        .set-card__status 
+                                            span.set-card__total-words 10 слов
+                                            span.set-card__progress 0 / 100%
+                                .set-card
+                                    .set-card__img 
+                                        img(src="img/verbe.png", alt="Глагол")
+                                    .set-card__details
+                                        span.set-card__title ТОП-10 глаголов                  
+                                        .set-card__status 
+                                            span.set-card__total-words 10 слов
+                                            span.set-card__progress 0 / 100%
+                                .set-card.set-card_add
+                section.trains.mb-3
+                    .page-width
+                        .trains__wrapper
+                            .select.mb-4
+                                select
+                                    option(selected="selected" disabled hidden) Выберите сет
+                                    option(value="2") 20 кухонных предметов
+                                    option(value="3") ТОП-10 глаголов
+                            .train-cards__wrapper.mb-3 
+                                .train-card.train-card_big Заучивание
+                                .train-card.train-card_small Перевёртыш
+                                .train-card.train-card_small Перевод-слово
+                                .train-card.train-card_big Повторение
+                                .train-card.train-card_small Сопоставление
+                                .train-card.train-card_small Слово-перевод
+                                .train-card.train-card_small Собери слово
+                                .train-card.train-card_small Тест
+            footer.footer
+                .page-width
+                    .footer__wrapper
+                        span.footer__version Версия сайта: 0.0.1
+
+
+                            

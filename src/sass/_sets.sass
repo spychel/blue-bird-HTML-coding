@@ -1,0 +1,90 @@
+.sets
+    background-color: $section-bg-color
+    &__wrapper
+        display: grid
+        grid-template-rows: 6rem auto
+        row-gap: 2rem
+        align-items: center
+    &__header
+        padding: 1.8rem 0
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+    &__content
+        padding: 3rem 0
+        &__wrapper
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            column-gap: 2rem
+            row-gap: 2rem
+    &__expander
+        margin-left: 2rem
+
+.expander
+    width: 2.4rem
+    height: 1.4rem
+    display: inline-block
+    cursor: pointer
+    &_up
+        background: url(../img/expand-up.png)
+    &_down
+        background: url(../img/expand-down.png)
+
+.set-card
+    cursor: pointer
+    width: 22.4rem
+    height: 30rem
+    background: linear-gradient(180deg, #290AA6 0%, #FFFFFF 100%)
+    box-shadow: .2rem .2rem .4rem #6F7577
+    border-radius: .5rem
+    font-family: 'Rubik'
+    font-style: normal
+    font-weight: 400
+    color: #6F7577
+    display: grid
+    grid-template-rows: 20rem 10rem
+    transition: all .2s
+    &:hover
+        transform: translateY(-0.2rem)
+    &:active
+        transform: translateY(0.2rem)
+    &__img
+        overflow: hidden
+    &__details
+        padding: .5rem 1rem 1rem 1rem
+        display: grid
+        grid-template-rows: repeat(5, 1fr)
+    &__title
+        font-size: 2rem
+        grid-row: 1 / 5
+    &__status
+        font-size: 1.4rem
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+    &__total-words
+        justify-self: start
+    &__progress
+        justify-self: end
+    &_add
+        position: relative
+        &::before
+            content: '+'
+            position: absolute
+            color: #ffffff
+            font-family: 'Fira Sans'
+            font-size: 5.5rem
+            font-weight: normal
+            position: absolute
+            left: 50%
+            top: 40%
+            transform: translate(-50%, -50%)
+        &::after
+            content: 'Добавить сет'
+            color: #ffffff
+            font-family: 'Fira Sans'
+            font-size: 2rem
+            font-weight: normal
+            position: absolute
+            left: 50%
+            top: 80%
+            transform: translate(-50%, -50%)
+            text-align: center
+            width: 100%
