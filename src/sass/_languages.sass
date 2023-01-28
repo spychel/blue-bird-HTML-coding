@@ -17,8 +17,10 @@
 
 .language-selector
     display: grid
-    grid-template-columns: repeat(8, 6rem)
+    grid-template-columns: repeat(6, 6rem)
     column-gap: 5.5rem
+    @include respond(m)
+        grid-template-columns: repeat(4, 6rem)
 
     &__language
         width: 5.9rem
