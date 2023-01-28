@@ -2,4 +2,32 @@
     font-family: Vasek
     font-weight: normal
     font-style: italic
-    
+
+@mixin respond($breakpoint)
+    @if $breakpoint == s
+        @media only screen and (max-width: 510px)
+            @content
+    @if $breakpoint == sm
+        @media only screen and (max-width: 664px)
+            @content
+    @if $breakpoint == ms
+        @media only screen and (max-width: 720px)
+            @content
+    @if $breakpoint == m
+        @media only screen and (max-width: 900px)
+            @content
+    @if $breakpoint == ls
+        @media only screen and (max-width: 1050px)
+            @content
+    @if $breakpoint == lm
+        @media only screen and (max-width: 1150px)
+            @content
+    @if $breakpoint == l
+        @media only screen and (max-width: 1200px)
+            @content
+    @if $breakpoint == xl
+        @media only screen and (min-width: 1201px) and (max-width: 1799px)
+            @content
+    @if $breakpoint == xxl
+        @media only screen and (min-width: 1800px)
+            @content

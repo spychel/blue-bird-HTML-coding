@@ -15,6 +15,14 @@
 
 html
     font-size: 62.5%
+    @include respond(ls)
+        font-size: 58%
+    @include respond(m)
+        font-size: 55%
+    @include respond(sm)
+        font-size: 62.5%
+    @include respond(xxl)
+        font-size: 75%
 
 body
     background-color: $body-bg-color
@@ -22,10 +30,19 @@ body
     font-style: normal
     font-weight: 400
     font-size: 2rem
-
-.container
+    width: 100%
 
 .page-width
     width: 120rem
-    padding: 0 10rem 0 10rem
+    padding: 0 10rem
     margin: 0 auto
+    @include respond(l)
+        width: 100%
+    @include respond(lm)
+        padding: 0 5rem
+    @include respond(ls)
+        padding: 0 5rem
+    @include respond(m)
+        padding: 0 2rem
+    @include respond(s)
+        padding: 0 2rem
